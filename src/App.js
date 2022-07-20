@@ -6,9 +6,8 @@ function App() {
   return (
     <div >
       <Home/>
-      <div>appsdasdasdas </div>
-      <img className="home-bloblLefImage" src="../assets/HomeBlob.png" alt=""/>
-      <img src="/images/mockup.png" alt="" />
+      
+ 
     </div>
   );
 }
