@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Switch , Route } from 'react-router-dom';
-import { HomePage, LoginPage, RegisterPage, ForgetPasswordPage, NotFound } from './pages/index'
+import { Home, LoginPage, RegisterPage, ForgetPasswordPage, NotFound } from './pages/index'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
@@ -12,7 +12,7 @@ export default function App() {
     <Router>
     <div>
         <Switch>
-        <Route path="/"exact component={ HomePage } />
+        <Route path="/"exact component={ Home } />
             <Route path="/login" component={ LoginPage } />
             <Route path="/register" component={ RegisterPage } />
             <Route path="/forget-password" component={ ForgetPasswordPage } />
