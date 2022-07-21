@@ -1,0 +1,44 @@
+[
+  {
+    "name":"Supermercado Juana",
+    "type": "Supermercado",
+    "date": "24.Jan.2021",
+    "amount": "75.000$",
+    "status": "Approved"
+  },
+  {
+    "name":"Electronicos",
+    "type": "Tienda",
+    "date": "24.Jan.2021",
+    "amount": "85.000$",
+    "status": "Approved"
+  },
+  {
+    "name":"Xbox Game Pass",
+    "type": "Entretenimiento",
+    "date": "24.Jan.2021",
+    "amount": "2.000$",
+    "status": "Approved"
+  },
+  {
+    "name":"Celular",
+    "type": "Tienda",
+    "date": "24.Jan.2021",
+    "amount": "375.000$",
+    "status": "Approved"
+  },
+  {
+    "name":"Celular",
+    "type": "Tienda",
+    "date": "24.Jan.2021",
+    "amount": "375.000$",
+    "status": "Approved"
+  },
+  {
+    "name":"Celular",
+    "type": "Tienda",
+    "date": "24.Jan.2021",
+    "amount": "375.000$",
+    "status": "Approved"
+  }
+]
