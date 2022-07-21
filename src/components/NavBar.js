@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/idea.png';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import logo from '../assets/img/layout/cashtyWhite.png';
+
 import { HashLink } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
+
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -33,7 +33,7 @@ export const NavBar = () => {
   }
 
   return (
-    <Router>
+
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
@@ -52,13 +52,16 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
 
-              <HashLink to='#connect'>
+              <NavLink to='/signup'>
                 <button className="vvd"><span>Join Us</span></button>
-              </HashLink>
+              </NavLink>
+
             </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </Router>
+
   )
 }
+
+export default NavBar

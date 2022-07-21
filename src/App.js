@@ -8,6 +8,7 @@ import  NotFound  from './views/presentation/NotFound';
 import  ForgetPasswordPage  from './views/auth/ForgetPasswordPage';
 import  SignIn  from './views/auth/SignIn';
 import  SignUp  from './views/auth/SignUp';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import AdminLayout from "./layouts/admin";

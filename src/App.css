@@ -35,6 +35,11 @@ body {
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
 }
+main {
+  background-color: white;
+  height: 200vh;
+  width: 100vw;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -53,15 +58,6 @@ a:hover {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
-button {
-  border: 0;
-  background-color: transparent;
-}
 
 input:focus, textarea:focus, select:focus {
   outline: none;
@@ -85,15 +81,15 @@ p.danger {
 
 .small-image {
   height: 60px;
-  width: 60px;
+  width: 350px;
 }
 nav.navbar {
   padding: 10px 0;
-  position: fixed;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition:  0.32 ease-in-out;
+  background-color: black;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -104,7 +100,7 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: black !important;
+  color: white;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -155,9 +151,12 @@ span.navbar-text {
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+
+/* TODO Modificar la porqueria de botón */
+
 .navbar-text button {
   font-weight: 700;
-  color: black;
+  color: white;
   border: 1px solid black;
   padding: 18px 34px;
   font-size: 18px;
@@ -165,6 +164,7 @@ span.navbar-text {
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
+  border-radius: 20px;
 }
 .navbar-text button span {
   z-index: 1;
@@ -179,6 +179,7 @@ span.navbar-text {
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
+  border-radius: 20px;
 }
 .navbar-text button:hover {
   color: #121212;
@@ -188,6 +189,7 @@ span.navbar-text {
 	width: 100%;
 	height: 100%;
 	position: absolute;
+  border-radius: 20px;
 }
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
