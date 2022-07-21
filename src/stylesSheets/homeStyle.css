@@ -46,25 +46,19 @@ Primera seccion del home
 }
 
 .home-phoneMckp{
-   
     position: relative;
-    top: 0;
-    left: 40px;
-    
+    top: -100px;
+    left: -130px;
 }
 
 .home-blobMckp{
     position: absolute;
     top: -50px;
     left: -60px;
- 
 }
-
 .home-first-section_flex-row1{
     display: flex;
-    
 }
-
 /* Boton registrarse */
 .cssbuttons-io-button {
     background: #F3CD02;
@@ -121,58 +115,60 @@ Primera seccion del home
     transform: scale(0.95);
    }
    
-
 /* Boton Mas info */
-.btn:link,
-.btn:visited {
- 
- text-decoration: none;
- color: #2D2A32;
- padding: 10px 18px;
- border: 1px solid;
- border-radius: 2rem;
- display: inline-block;
- transition: all .2s;
- position: relative;
 
-}
-
-.btn:hover {
- transform: translateY(-5px);
- box-shadow: 0 10px 20px #F3CD02;
-}
-
-.btn:active {
- transform: translateY(-3px);
-}
-
-.btn::after {
- content: "";
- display: inline-block;
- height: 100%;
- width: 100%;
- border-radius: 100px;
- top: 0;
- left: 0;
- position: absolute;
- z-index: -1;
- transition: all .3s;
-}
-
-.btn:hover::after {
- background-color: #F3CD02;
- transform: scaleX(1.4) scaleY(1.5);
- opacity: 0;
-}
-
-
+.botonInfo {
+    --color: #2D2A32;
+    font-family: inherit;
+    display: inline-block;
+    width: 9.2em;
+    height: 2.6em;
+    line-height: 2.5em;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 1.8em;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   .botonInfo:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .botonInfo:hover {
+    color: #fff;
+   }
+   
+   .botonInfo:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .botonInfo:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .botonInfo:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
 
 /*  Segunda seccion del home  */
 .home-second-section{
     margin-top: 200px;
 }
-
-
 .home-second-sectio_title{
     font-size: 40px;
     font-weight: 700;
@@ -191,15 +187,12 @@ Primera seccion del home
     text-align: center;
     letter-spacing: 0.2px;
     color: #2D2A32;
-
 }
-
 .home-second-section_blobImage {
     position: absolute;
     z-index: -1;
     margin-top: -120px;
 }
-
 .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -209,7 +202,6 @@ Primera seccion del home
     margin-left: 90px;
     margin-top: 51px;
     }
-    
     .div1 { grid-area: 1 / 1 / 2 / 2; }
     .div2 { grid-area: 1 / 2 / 2 / 3; }
     .div3 { grid-area: 1 / 3 / 2 / 4; }
@@ -217,16 +209,14 @@ Primera seccion del home
     .div5 { grid-area: 2 / 2 / 3 / 3; }
     .div6 { grid-area: 2 / 3 / 3 / 4; }
     
-
 .card-second-section{
     width: 300px;
     height: 140px;
-    background-color: #fff;
+    background-color: #2D2A32;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 30px 0px 0px 80px;
-
-
+    color: #FFF;
 }
 .card-second-section_title{
     font-weight: 700;
@@ -237,3 +227,270 @@ Primera seccion del home
     width: 190px;
     font-weight: 330;
 }
+
+/* Tercera Seccion */
+
+.home-third-section{
+    display: flex;
+    flex-direction: row;
+    margin:150px 0px 0px 50px;
+    background: linear-gradient(335.75deg, #F3CD02 -48.62%, rgba(243, 205, 2, 0) 73%);
+    margin-left: -25px;
+    height: 1100px;
+}
+.home-third-section_first-row {
+    width: 720px;
+}
+.home-third-section_first-row_title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    background: linear-gradient(269.77deg, #F3CD02 -1.33%, #F1BE5B 43.53%, #F8944C 112.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.titleFixMarign{
+    margin-left: 150px;
+}
+.home-third-section_first-row_p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    width: 450px;
+    letter-spacing: 0.2px;
+    color: #2D2A32;
+    font-size: 18px;
+}
+.pFixMargin{
+    margin-left: 150px;
+}
+
+.home-third-section_first-row_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../public/assets/Group\ 1038\(1\).png");
+    background-repeat: no-repeat;
+    padding: 80px 60px 60px 30px;
+    height: 555px;
+    width: 490px;
+    margin-left: 120px;
+}
+
+.descriptionCard{
+    width: 250px;
+    text-align: center;
+    color: #FFF;
+}
+
+.home-third-section_second-row {
+    width: 720px;
+}
+
+.home-third-section_second-row_1card{
+    margin-top: -15px;
+    background-image: url("../../public/assets/cardThirdSection.png");
+    height: 450px;
+    width: 450px;
+    padding: 20px 0px 60px 120px;
+}
+
+.carTab_graph{
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-radius: 30px;
+    background-color: #2D2A32;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0px 0px 8px;
+    margin-bottom: 468px;
+    margin-top: -494px;
+}
+
+.cardTab_circle{
+    width: 250px;
+    height: 330px;
+    color: white;
+    border-radius: 30px;
+    background-color: #2D2A32;
+    margin-top: -500px ;
+    margin-left: 425px;
+}
+
+.cardTab_large{
+    width: 300px;
+    height: 120px;
+    color: white;
+    border-radius: 30px;
+    background-color: #2D2A32;
+    padding: 30px 0px 0px 10px;
+    display:flex ;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -150px;
+    margin-left: -180px;
+    
+}
+
+.cardTab_circle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) 5fr repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-left: 5px;
+    padding-top: 10px;
+    }
+    .div1-section3 { grid-area: 1 / 1 / 2 / 2; margin-left: 20px; font-weight: 700;}
+    .div2-section3 { grid-area: 1 / 2 / 2 / 3; margin-left: -50px; font-weight: 700;}
+    .div3-section3 { grid-area: 2 / 1 / 3 / 2; margin-left: 20px}
+    .div4-section3 { grid-area: 2 / 2 / 3 / 3; margin-left: -50px;}
+    .div5-section3 { grid-area: 3 / 1 / 4 / 2; padding-left: 30px;}
+    .div7-section3 { grid-area: 4 / 1 / 5 / 2; padding-left: 80px; font-weight: 700;}
+    .div9-section3 { grid-area: 5 / 1 / 6 / 2;  padding-left: 60px}
+  
+/* Cuarta Seccion  */
+.home-fourth-section{
+    margin-top: 0px;
+    background-color: #ECECEC;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.home-fourth-section_title{
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    text-align: center;
+}
+
+.home-fourth-section_descroption{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #252B42;
+}
+
+.home-fourth-section_row{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+.card_price{
+    width: 509px;
+    height: 243px;
+    background-color: #FFF;
+    border-radius: 30px;
+    padding: 50px 0px 0px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+
+/*Estilos de los textos de adentro */
+.TituloCardPrice{
+    font-weight: 700;
+    color: #F3CD02;
+}
+.priceSign{
+    color: #737373;
+}
+.descriptionCardPrice{
+    width: 200px;
+}
+
+.PriceNumber{
+    font-weight: 700;
+    font-size: 40px;
+    color: #2D2A32;
+}
+
+/* --   */
+
+.flex_card_price_col2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  
+}
+.flex_card_price_col2_prices{
+    display: flex;
+    flex-direction: column;
+}
+
+/*  Estilo boton  comprar */
+
+.PriceButton {
+    --primary-color: #F3CD02;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 10px !important;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    margin-left: -38px;
+    margin-top: 30px;
+  }
+  
+  .PriceButton .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .PriceButton .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .PriceButton .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .PriceButton:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .PriceButton:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .PriceButton:hover .arrow:before {
+    right: 0;
+  }
